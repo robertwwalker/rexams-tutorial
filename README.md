@@ -18,12 +18,14 @@ In general, these files are intended to be used in the Canvas LMS.  Use in other
 The process for generating a Canvas quiz or testbank is as follows:
 
 1. Have a .Rmd with your Quiz question in it.
-    * either download one of the examples on this web page, or
+    * Either download one of the examples on this web page, or
     * make your own from scratch following an example on this web page.
 
 2. Start "R" on your computer (e.g., usually an "R" icon on your desktop).
+    * "R" can be installed from:\
+https://cloud.r-project.org/
 
-3. Install the "exams" package (using the URL above)
+3. Install the "exams" package (the instructions are at: https://r-forge.r-project.org/R/?group_id=1337)
     * This needs to be done just once; however, please know that the "exams" package is updated frequently.
 
 4. Switch to the directory containing your .Rmd quiz file (e.g., 'setwd( "c:\\exams" )')
