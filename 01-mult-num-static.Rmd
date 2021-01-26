@@ -1,0 +1,14 @@
+Question
+========
+What is 2 * 3?
+
+Solution
+=========
+2 * 3 is 6.
+
+Meta-information
+================
+extype: num
+exsolution: 6
+exname: mult-num-static
+extol: 0.00
