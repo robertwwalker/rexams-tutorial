@@ -40,7 +40,7 @@ https://r-forge.r-project.org/R/?group_id=1337)
     * "Import Existing Content"
     * "Content Type: QTI .zip file"
     * "Source: <select your Quiz/Testbank file on your local computer>"
-    * "Default Question Bank: -- Create new question bank -- and then enter <the name of your testbank file>"
+    * "Default Question Bank: -- Create new question bank -- and then <enter the name of your testbank file>"
     * "Import" (wait a few moments for the file to be uploaded, queued, and completed)
 
 8. Upon Import completion, Canvas makes both a "Quiz" and a "Testbank".
