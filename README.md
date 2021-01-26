@@ -2,7 +2,7 @@
 
 **Summary**: (enough to start)
 
-This Github page is intended to be a simple tutorial for using the "exams" R package to generate files, typically testbanks.
+This Github page is intended to be a simple tutorial for using the "exams" package in R to generate files, typically testbanks, for use in Canvas.
 
 These Rmd (Rmarkdown) files are to be used with the "exams" R package:\
 https://r-forge.r-project.org/R/?group_id=1337
