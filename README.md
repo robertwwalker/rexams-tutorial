@@ -29,7 +29,7 @@ https://cloud.r-project.org/
 https://r-forge.r-project.org/R/?group_id=1337)
     * This needs to be done just once; however, please know that the "exams" package is updated frequently.
 
-4. Switch to the directory containing your .Rmd quiz file (e.g., 'setwd( "c:\\exams" )')
+4. Switch to the directory containing your .Rmd quiz file (e.g., 'setwd( "c:\\\exams" )')
 
 5. Load the "exams" library (i.e., 'library( exams )' )
 
