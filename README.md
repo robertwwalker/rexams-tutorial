@@ -13,9 +13,9 @@ While it is certainly possible to install this package on CRAN as would typicall
 
 The files are intended to be used (learned) in sequence.  This helps with understanding how these markdown files are generated--from simple to complex.
 
-**Rmd files**:
+**Details**: (regarding each .Rmd file)
 
-1. ***01-mult-num-static***
+1. ***01-mult-num-static.Rmd***
     * genre: multiplicaton, type: numeric, versioning: static
 
 I welcome your feedback.
