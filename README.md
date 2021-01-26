@@ -56,12 +56,11 @@ https://r-forge.r-project.org/R/?group_id=1337)
 
 13. Select "Link to a Question Bank".
 
-14. Select the desired question bank (e.g., "01-mult-num-static.Rmd" ) and click "Select Bank'.
+14. Select the desired question bank (e.g., "01-mult-num-static" ) and click "Select Bank'.
 
-15. Select the desired question bank (e.g., "01-mult-num-static.Rmd" ) and click "Select Bank'.
-
-16. Select "Create Group".  This creates a Quiz Question that--for each student--will pull one question randomly from the testbank.
-    * If 1), the range of the variables in Quiz .Rmd file is high, and 2), the number of versions in the generated testbank is higher enough, it is possible that each student could, in fact, get a unique Quiz Question in Canvas.
+15. Select "Create Group".  This creates a Quiz Question that--for each student--will pull one question randomly from the testbank.
+    * If 1), the range of the variables in Quiz .Rmd file is high, and 2), the number of versions (the "n" variable in the "exams2canvas" function) in the generated testbank is high enough, it is possible that each student could, in fact, get a unique Quiz Question in Canvas.
+    * In general, R users would use the "sample" function to generate continuous or discrete samples or perhaps the "runif" function to generate random variates from a "uniform" distribution.
 
 
 **Details**: (regarding each .Rmd file)
