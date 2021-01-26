@@ -7,7 +7,7 @@ This Github page is intended to be a simple tutorial for using the "exams" packa
 These Rmd (Rmarkdown) files are to be used with the "exams" R package:\
 https://r-forge.r-project.org/R/?group_id=1337
 
-While it is certainly possible to install this package on CRAN as would typically be done,
+While it is certainly possible to install this package on CRAN as would typically be done with other R packages,
  I recommend using the latest version from the R-forge page above because it always contains the latest (pre-CRAN upload) changes.
  These changes can be particularly important for Canvas.
 
