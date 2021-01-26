@@ -43,7 +43,8 @@ https://r-forge.r-project.org/R/?group_id=1337)
     * "Default Question Bank: -- Create new question bank --" and then enter the name of your testbank file
     * "Import" (wait a few moments for the file to be uploaded, queued, and completed)
 
-8. Canvas makes both a "Quiz" and a "Testbank".  You most likely only want the "Testbank"; you can then go to "Quizzes" and delete the new "Quiz".
+8. Upon Import completion, Canvas makes both a "Quiz" and a "Testbank".
+ You most likely only want the "Testbank"; you can then go to "Quizzes" and delete the new "Quiz" (01-mult-num-static).
 
 9. Add a new Quiz or Select an existing Quiz.
 
