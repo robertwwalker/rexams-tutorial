@@ -34,7 +34,7 @@ https://r-forge.r-project.org/R/?group_id=1337)
 5. Load the "exams" library (i.e., 'library( exams )' )
 
 6. Generate your Canvas Quiz/Testbank file (i.e., 'exams2canvas( file = "01-mult-num-static.Rmd", n = 1, name = "01-mult-num-static.Rmd" )')
-    * This generates a .zip file.
+    * This generates a '01-mult-num-static.zip' file.
 
 7. Import the resulting Quiz/Testbank file into Canvas (i.e., from a Canvas course main page):
     * "Import Existing Content"
