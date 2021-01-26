@@ -25,7 +25,8 @@ The process for generating a Canvas quiz or testbank is as follows:
     * "R" can be installed from:\
 https://cloud.r-project.org/
 
-3. Install the "exams" package (the instructions are at: https://r-forge.r-project.org/R/?group_id=1337)
+3. Install the "exams" package (the instructions are at:\
+https://r-forge.r-project.org/R/?group_id=1337)
     * This needs to be done just once; however, please know that the "exams" package is updated frequently.
 
 4. Switch to the directory containing your .Rmd quiz file (e.g., 'setwd( "c:\\exams" )')
