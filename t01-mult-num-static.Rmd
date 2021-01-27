@@ -10,5 +10,5 @@ Meta-information
 ================
 extype: num
 exsolution: 6
-exname: mult-num-static
+exname: t01-mult-num-static
 extol: 0.00

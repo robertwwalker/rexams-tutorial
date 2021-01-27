@@ -18,5 +18,5 @@ Meta-information
 ================
 extype: num
 exsolution: `r res`
-exname: t02-mult-num-variables
+exname: t02-mult-num-consants-static
 extol: 0.00
