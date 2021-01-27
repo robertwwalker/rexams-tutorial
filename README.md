@@ -3,7 +3,7 @@
 **Introduction**: (overall idea)
 
 This Github page is intended to be a simple tutorial for using the "exams" package in R to generate files, typically testbanks, for use in Canvas.
- The R "exams" package is documented at:\
+ The R "exams" package is extensively documented, including many other sample template .Rmd files, at:\
 http://www.r-exams.org/
 
 These .Rmd (Rmarkdown) files are to be used with the R "exams" package available at:\
