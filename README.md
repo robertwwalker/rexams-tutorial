@@ -13,10 +13,12 @@ While it is certainly possible to install this package on CRAN as would typicall
  I recommend using the latest version from the R-forge page above because it always contains the latest (pre-CRAN upload) changes.
  These changes can be particularly important for Canvas.
 
-These .Rmd files are intended to be used (learned) in sequence.  This helps with understanding how these files are created--from simple to complex.
+Novices with R, the "exams" package, or Canvas Quizzes can use (learn) these .Rmd files in sequence.
+ Advanced users can quickly review the simpler .Rmd files and go directly to the more complex .Rmd files.
+ Having many examples helps all users with understanding how these files are created--from simple to complex.
 
-These files are intended to be used in the Canvas LMS.  Use in other LMSs, or as .html. or .pdf files, is quite possible as well.
- The purpose of using a single LMS is to demonstrate a complete quiz workflow from creating to student view.
+These files are intended to be used in the Canvas LMS.  Use in other LMSs, or as .html. or .pdf files, is possible as well.
+ The purpose of using a single LMS is to demonstrate a complete quiz workflow from creating a .Rmd file to "previewing" an exact student view.
 
 
 **Summary**: (enough to start for power R users)
@@ -26,10 +28,12 @@ https://r-forge.r-project.org/R/?group_id=1337
 
 2. Either create a new .Rmd file or download one of the example .Rmd files on this web site (either copy-and-paste or use the "Raw" button and Save)
 
-3. In R, load the "exams" library and run the following command (make sure you are in the directory with the .Rmd in it):\
-exams2canvas( file = "t01-mult-num-static.Rmd", n = 10, name = "t01-mult-num-static.Rmd
+3. In R, load the "exams" library and run the following command (make sure you are in the directory with the .Rmd file in it):\
+exams2canvas( file = "t01-mult-num-static.Rmd", n = 10, name = "t01-mult-num-static.Rmd" )
 
-4. Import the resulting .zip file into Canvas as a testbank.  Create a new Question Group in a Quiz and link to this testbank.
+4. Import the resulting 't01-mult-num-static.Rmd.zip' file into Canvas as a testbank as you would from a publisher's software tool or Respondus.
+ Delete the 't01-mult-num-static' Quiz (you only want the testbank).
+ Finally, create a new Question Group in a Quiz and link to this testbank.
 
 
 **Details**: (step-by-step)
