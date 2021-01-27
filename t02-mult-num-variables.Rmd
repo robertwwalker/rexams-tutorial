@@ -1,0 +1,22 @@
+```{r data generation, echo = FALSE, results = "hide"}
+## parameters
+a <- 2
+b <- 3
+## solution
+res <- a * b
+```
+
+Question
+========
+What is `r a` * `r b`?
+
+Solution
+=========
+`r a` * `r b` = `r res`
+
+Meta-information
+================
+extype: num
+exsolution: `r res`
+exname: t02-mult-num-variables
+extol: 0.00
