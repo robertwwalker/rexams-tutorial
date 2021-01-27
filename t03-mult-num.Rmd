@@ -1,7 +1,7 @@
 ```{r data generation, echo = FALSE, results = "hide"}
 ## parameters
-a <- sample( 1: 100, 1 )
-b <- sample( 1: 100, 2 )
+a <- sample( 1: 10, 1 )
+b <- sample( 1: 10, 1 )
 ## solution
 res <- a * b
 ```
