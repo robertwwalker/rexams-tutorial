@@ -10,7 +10,7 @@ These .Rmd (Rmarkdown) files are to be used with the R "exams" package available
 https://cran.r-project.org/web/packages/exams/
 
 While it is certainly possible to install this package on CRAN as would typically be done with other R packages,
- I recommend using the latest version from the R-forge page above because it always contains the latest (pre-CRAN upload) changes.
+ I recommend using the latest version from the R-forge page because it always contains the latest (pre-CRAN upload) changes.
  These changes can be particularly important for Canvas.  The development version of the "exams" package is at:\
 https://r-forge.r-project.org/R/?group_id=1337
 
