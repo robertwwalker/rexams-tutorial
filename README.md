@@ -2,17 +2,21 @@
 
 **Introduction**: (overall idea)
 
-This Github page is intended to be a simple tutorial for using the "exams" package (http://www.r-exams.org/) in R to generate files, typically testbanks, for use in Canvas.
- The R "exams" package is extensively documented, including examples of many other .Rmd ("Rmarkdown") files or "templates".
+This Github repository is intended to be a simple tutorial for using the "exams" package (https://cran.r-project.org/web/packages/exams/) in R to generate files, typically Quiz testbanks, for use in an Learning Management System (LMS) such as Canvas.
+ The "exams" package uses .Rmd files to generate the Quiz questions.  The R "exams" package is extensively documented, including examples of many other .Rmd ("Rmarkdown") files or "templates" (http://www.r-exams.org/).
 
-These .Rmd files are to be used with the R "exams" package available at:\
-https://cran.r-project.org/web/packages/exams/
+The "exams" package can be installed in R with the usual command:\
+```r
+install.packages( "exams" )
+```
 
 While it is certainly possible to install this package on CRAN as would typically be done with other R packages,
  I recommend using the latest version from the R-forge page (https://r-forge.r-project.org/R/?group_id=1337
 ) because it always contains the latest (pre-CRAN upload) changes.
  These changes can be particularly important for Canvas.  The development version of the "exams" package is at:\
- install.packages("exams", repos="http://R-Forge.R-project.org")
+```r
+ install.packages( "exams", repos = "http://R-Forge.R-project.org" )
+```
 
 Novices with R, the "exams" package, or Canvas Quizzes can use (learn) these .Rmd files in sequence.
  Advanced users can quickly review the simpler .Rmd files and go directly to the more complex .Rmd files.
