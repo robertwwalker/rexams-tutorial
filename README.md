@@ -28,17 +28,23 @@ These files are intended to be used in the Canvas LMS.  Use in other LMSs, or as
 
 ## **Summary**: (enough to start for power R users)
 
-1. In R, install the "exams" package at:\
-https://r-forge.r-project.org/R/?group_id=1337
+1. In R, install the development version of the "exams" package (described above)
 
 2. Either create a new .Rmd file or download one of the example .Rmd files on this web site (either copy-and-paste or use the "Raw" button and Save)
 
-3. In R, load the "exams" library and run the following command (make sure you are in the directory with the .Rmd file in it):\
-exams2canvas( file = "t01-mult-num-static.Rmd", n = 10, name = "t01-mult-num-static.Rmd" )
+3. In R, load the "exams" library
+```r
+library( "exams" )
+```
 
-4. Import the resulting 't01-mult-num-static.Rmd.zip' file into Canvas as a testbank as you would from a publisher's software tool or Respondus.
+4. Run the following command (make sure you are in the directory with the .Rmd file in it):
+```r
+exams2canvas( file = "t01-mult-num-static.Rmd", n = 10, name = "t01-mult-num-static.Rmd" )
+```
+
+5. Import the resulting 't01-mult-num-static.Rmd.zip' file into Canvas as a testbank just as you would for a testbank from publisher's software tool or a testbank created manually in Respondus.
  Delete the 't01-mult-num-static' Quiz (you only want the testbank).
- Finally, create a new Question Group in a Quiz and link to this testbank.
+ Finally, create a new Question Group in a Quiz and link to a Question Bank (Canvas' name for a 'testbank').
 
 
 ## **Details**: (step-by-step)
