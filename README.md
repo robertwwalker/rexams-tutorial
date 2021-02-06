@@ -1,6 +1,6 @@
 # rexams-tutorial
 
-**Introduction**: (overall idea)
+## **Introduction**: (overall idea)
 
 This Github repository is intended to be a simple tutorial for using the "exams" package (https://cran.r-project.org/web/packages/exams/) in R to generate files, typically Quiz testbanks, for use in an Learning Management System (LMS) such as Canvas.
  The "exams" package uses .Rmd files to generate the Quiz questions.  The R "exams" package is extensively documented, including examples of many other .Rmd ("Rmarkdown") files or "templates" (http://www.r-exams.org/).
