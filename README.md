@@ -26,7 +26,7 @@ These files are intended to be used in the Canvas LMS.  Use in other LMSs, or as
  The purpose of using a single LMS is to demonstrate a complete quiz workflow from creating a .Rmd file to "previewing" an exact student view.
 
 
-**Summary**: (enough to start for power R users)
+## **Summary**: (enough to start for power R users)
 
 1. In R, install the "exams" package at:\
 https://r-forge.r-project.org/R/?group_id=1337
@@ -41,7 +41,7 @@ exams2canvas( file = "t01-mult-num-static.Rmd", n = 10, name = "t01-mult-num-sta
  Finally, create a new Question Group in a Quiz and link to this testbank.
 
 
-**Details**: (step-by-step)
+## **Details**: (step-by-step)
 
 The process for generating a Canvas quiz or testbank is as follows:
 
@@ -95,7 +95,7 @@ https://r-forge.r-project.org/R/?group_id=1337)
     * In general, R users would use the "sample" function to generate continuous or discrete samples or perhaps the "runif" function to generate random variates from a "uniform" distribution.
 
 
-**.Rmd documentation**: (regarding each .Rmd file)
+## **.Rmd documentation**: (regarding each .Rmd file)
 
 1. ***t01-mult-num-static.Rmd***
     * genre: multiplicaton, type: numeric, r-code: manually entered numbers, versioning: static
