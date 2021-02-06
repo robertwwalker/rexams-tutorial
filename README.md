@@ -26,7 +26,7 @@ These files are intended to be used in the Canvas LMS.  Use in other LMSs, or as
  The purpose of using a single LMS is to demonstrate a complete quiz workflow from creating a .Rmd file to "previewing" an exact student view.
 
 
-## **Summary**: (enough to start for power R users)
+## **Summary**: (enough for user with some experience with R and some experience with Canvas)
 
 1. In R, install the development version of the "exams" package (described above)
 
