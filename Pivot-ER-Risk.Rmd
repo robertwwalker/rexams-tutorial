@@ -2,7 +2,7 @@ Question
 ========
 
 \
-```{r scatterplot, echo = FALSE, results = "hide", fig.height = 5, fig.width = 6, fig.path = "", fig.cap = "", warning=FALSE, message=FALSE}
+```{r sc2, echo = FALSE, results = "asis", fig.height = 5, fig.width = 6, fig.path = "", fig.cap = "", warning=FALSE, message=FALSE}
 library(radiant)
 ## Load commands
 BondFunds <- readr::read_delim(
@@ -16,11 +16,11 @@ result <- explore(
   BondFunds, 
   vars = "Expense_Ratio", 
   byvar = "Risk", 
-  fun = c("n_obs", "mean", "min", "max", "sd"), 
+  fun = c("mean", "median", "min", "max", "p25", "p75"), 
   nr = Inf
 )
 # summary(result)
-dtab(result, caption = "") %>% render()
+knitr::kable(result[1],format = "html")
 ```
 
 The median `Expense_Ratio` for Funds with **Average** Risk levels is?
@@ -34,5 +34,5 @@ Meta-information
 ================
 extype: num
 exsolution: 0.7
-exname: t01-mult-num-static
+exname: Pivot-ER-Risk
 extol: 0.001

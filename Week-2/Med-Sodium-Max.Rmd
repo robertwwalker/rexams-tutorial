@@ -1,0 +1,44 @@
+Question
+========
+Which chain has the highest median sodium?
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+Arby's.  1480 mg.
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> group_by(restaurant) |> summarise(median(sodium, na.rm=TRUE))
+```
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+* False
+* False
+* False
+* False
+
+Meta-information
+================
+exname: MedSodMax
+extype: schoice
+exsolution: 10000000
+exshuffle: 8

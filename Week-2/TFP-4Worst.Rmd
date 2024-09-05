@@ -1,0 +1,46 @@
+Question
+========
+Create the variable `TransFatPercentage` which is `trans_fat / total_fat`.  Name the four worst [highest value] chains.
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+Burger King's Chicken Fries, Dairy Queen's Deluxe Hamburger, Taco Bell's Meximelt and Arby's Half Pound Roast Beef
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", 
+    sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> mutate(TransFatPercentage = trans_fat / total_fat) |> arrange(desc(TransFatPercentage)) |> select(restaurant, item, TransFatPercentage) |> head(5)
+```
+
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+* False
+* False
+* False
+* True
+
+Meta-information
+================
+exname: 3QCalMin
+extype: mchoice
+exsolution: 11010001
+exshuffle: 8

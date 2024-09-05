@@ -1,0 +1,46 @@
+Question
+========
+What chain has the highest average `TransFatPercentage`?
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+Dairy Queen.  2.23 percent.
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", 
+    sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> mutate(TransFatPercentage = trans_fat / total_fat) |> group_by(restaurant) |> summarise(mean(TransFatPercentage, na.rm=TRUE))
+```
+
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+* False
+* False
+* False
+* False
+
+Meta-information
+================
+exname: Q7
+extype: schoice
+exsolution: 00010000
+exshuffle: 8

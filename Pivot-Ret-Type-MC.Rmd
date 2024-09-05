@@ -1,0 +1,65 @@
+Question
+========
+
+\
+```{r sp1, echo = FALSE, results = "asis", fig.height = 5, fig.width = 6, fig.path = "", fig.cap = "", warning=FALSE, message=FALSE}
+library(radiant)
+## Load commands
+BondFunds <- readr::read_delim(
+  "https://raw.githubusercontent.com/robertwwalker/DADMStuff/master/BondFunds.csv",
+  delim = ",", col_names = TRUE, n_max = Inf,
+  locale = readr::locale(decimal_mark = ".", grouping_mark = ",")
+) %>%
+  fix_names() %>%
+  to_fct()
+result <- explore(
+  BondFunds, 
+  vars = "Return_2009", 
+  fun = c("mean", "median", "min", "max", "p25", "p75", "IQR"), 
+  nr = Inf
+)
+knitr::kable(result[1],format = "html")
+result <- explore(
+  BondFunds, 
+  vars = "Return_2009", 
+  byvar = "Type", 
+  fun = c("mean", "median", "min", "max", "p25", "p75", "IQR"), 
+  nr = Inf
+)
+# summary(result)
+knitr::kable(result[1],format = "html")
+```
+
+Which of the following statements about returns in 2009, `Return_2009`, are true?
+
+Answerlist
+----------
+* The IQR. -- interquartile range -- of Returns -- `Return_2009` -- for **Intermediate Government** funds is `r round(IQR(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"]), digits=2)`.
+* The first quartile, 25th percentile, of Returns for **Short Term Corporate** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"], probs=c(0.25)), digits=2)`.
+* The first quartile, 25th percentile, of Returns for **Intermediate Government** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"], probs=c(0.25)), digits=2)`.
+* The third quartile, 75th percentile, of Returns for **Intermediate Government** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Short Term Corporate"], probs=c(0.75)), digits=2)`.
+* The middle 50% of all Returns in 2009 -- `Return_2009` -- ranges from `round(quantile(BondFunds$Return_2009, probs=c(0.25)), digits=2)` to `round(quantile(BondFunds$Return_2009, probs=c(0.75)), digits=2)`.
+* The third quartile, 75th percentile, of Returns for **Short Term Corporate** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Short Term Corporate"], probs=c(0.75)), digits=2)`.
+* The fund with the highest returns in 2009 -- `Return_2009` -- was a **Short Term Corporate** fund.
+
+
+Solution
+=========
+
+Answerlist
+----------
+* True.  The IQR. -- interquartile range -- of Returns -- `Return_2009` -- for **Intermediate Government** funds is `r round(IQR(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"]), digits=2)`.
+* False.  The first quartile, 25th percentile, of Returns for **Short Term Corporate** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"], probs=c(0.25)), digits=2)`.
+* True.  The first quartile, 25th percentile, of Returns for **Intermediate Government** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Intermediate Government"], probs=c(0.25)), digits=2)`.
+* False.  The third quartile, 75th percentile, of Returns for **Intermediate Government** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Short Term Corporate"], probs=c(0.75)), digits=2)`.
+* True.  The middle 50% of all Returns in 2009 -- `Return_2009` -- ranges from `r round(quantile(BondFunds$Return_2009, probs=c(0.25)), digits=2)` to `r round(quantile(BondFunds$Return_2009, probs=c(0.75)), digits=2)`.
+* True.  The third quartile, 75th percentile, of Returns for **Short Term Corporate** funds is `r round(quantile(BondFunds$Return_2009[BondFunds$Type=="Short Term Corporate"], probs=c(0.75)), digits=2)`.
+* True.  The fund with the highest returns in 2009 -- `Return_2009` -- was a **Short Term Corporate** fund.
+
+
+Meta-information
+================
+extype: mchoice
+exsolution: 1010111
+exname: Pivot-FF-Med-Cal
+exshuffle: TRUE

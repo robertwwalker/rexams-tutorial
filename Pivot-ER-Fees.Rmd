@@ -1,0 +1,38 @@
+Question
+========
+
+\
+```{r scfee, echo = FALSE, results = "asis", fig.height = 5, fig.width = 6, fig.path = "", fig.cap = "", warning=FALSE, message=FALSE}
+library(radiant)
+## Load commands
+BondFunds <- readr::read_delim(
+  "https://raw.githubusercontent.com/robertwwalker/DADMStuff/master/BondFunds.csv",
+  delim = ",", col_names = TRUE, n_max = Inf,
+  locale = readr::locale(decimal_mark = ".", grouping_mark = ",")
+) %>%
+  fix_names() %>%
+  to_fct()
+result <- explore(
+  BondFunds, 
+  vars = "Expense_Ratio", 
+  byvar = "Fees", 
+  fun = c("mean", "median", "min", "max", "p25", "p75"), 
+  nr = Inf
+)
+# summary(result)
+knitr::kable(result[1],format = "html")
+```
+
+The median `Expense_Ratio` for Funds with **Yes** on `Fees` is (to two digits)?
+
+
+Solution
+=========
+The median `Expense_Ratio` for Funds with **Average** Risk levels is `r round(median(BondFunds$Expense_Ratio[BondFunds$Fees=="Yes"]), digits=3)`.
+
+Meta-information
+================
+extype: num
+exsolution: 0.945
+exname: Pivot-ER-Fees
+extol: 0.0051

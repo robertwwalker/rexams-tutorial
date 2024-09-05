@@ -1,0 +1,44 @@
+Question
+========
+Which chain has the highest median calories?
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+Sonic.  570 calories.
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> group_by(restaurant) |> summarise(median(calories, na.rm=TRUE))
+```
+
+Answerlist
+----------
+* False
+* False
+* False
+* False
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: MedCal
+extype: schoice
+exsolution: 00000100
+exshuffle: 8

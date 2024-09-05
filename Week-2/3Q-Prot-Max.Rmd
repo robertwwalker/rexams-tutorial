@@ -1,0 +1,46 @@
+Question
+========
+Which chain has the highest 3rd quartile of protein?
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+McDonalds.  46 g protein.
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", 
+    sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> group_by(restaurant) |> summarise(quantile(protein, na.rm=TRUE, probs=c(0.75))) |> arrange()
+```
+
+
+Answerlist
+----------
+* False
+* False
+* False
+* False
+* True
+* False
+* False
+* False
+
+Meta-information
+================
+exname: 3QProtMax
+extype: schoice
+exsolution: 00001000
+exshuffle: 8

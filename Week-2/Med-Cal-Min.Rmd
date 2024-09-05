@@ -1,0 +1,44 @@
+Question
+========
+Which chain has the lowest median calories?
+
+Answerlist
+----------
+* Arbys
+* Burger King
+* Chick Fil-A
+* Dairy Queen
+* Mcdonalds
+* Sonic
+* Subway
+* Taco Bell
+
+
+Solution
+========
+Chick Fil-A.  390 calories.
+
+```{r}
+library(readxl)
+FastFood <- read_excel("~/Downloads/Week-2 (1).xls", sheet = "FastFood", na = "NA")
+library(dplyr)
+FastFood |> group_by(restaurant) |> summarise(median(calories, na.rm=TRUE))
+```
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+* False
+* False
+* False
+* False
+
+Meta-information
+================
+exname: MedCalMin
+extype: schoice
+exsolution: 00100000
+exshuffle: 8
